@@ -19,7 +19,7 @@
                 <a><%=article.dc_creator%></a><br>
                 <a><%=article.pubDate.substring(4).substring(0,7)%>, <%=article.pubDate.substring(11).substring(0,6)%> · <%=Math.floor(article.content_encoded.split(" ").length/130)%> min read</a>  
               </div><br>
-            <a href="<%=article.link%>" style="text-decoration: none; color: black;"><h1><%=article.title%></h1></a>
+            <a target="_blank" href="<%=article.link%>" style="text-decoration: none; color: black;"><h1><%=article.title%></h1></a>
             <div class="main_inside_2">
               <%-article.content_encoded%>
             </div>
